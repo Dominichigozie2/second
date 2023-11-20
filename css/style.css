@@ -3,10 +3,12 @@
  margin: 0;
  box-sizing: border-box;
  user-select: none;
+ scroll-behavior: smooth;
 }
 body{
     font-family: sans-serif;
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -183,7 +185,7 @@ nav{
 
 
 .div-1 h1 {
- font-size: 10rem;
+ font-size: 7rem;
  color: var(--clr-2);
  line-height: 100px;
 }
@@ -762,6 +764,19 @@ footer p{
 
 
 
+@media(width < 1400px){
+    .home-container,
+    .about-container,
+    .brand-container,
+    .services-container,
+    .question-container,
+    .footer-container,
+    .container-footer,
+    .nav-container,
+    footer{
+        width: 98%;
+    }
+}
 @media(width < 950px){
     .about-container,
     .brand-container,
